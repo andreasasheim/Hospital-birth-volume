@@ -1,6 +1,4 @@
-cls
-set trace off
-cd "N:\durable\regforsk\Kommunepar\Data"
+
 use "analysefil_kommunepar", clear
 
 gen bef_tetthet = befolkning /areal
