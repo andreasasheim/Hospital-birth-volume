@@ -1,20 +1,4 @@
-
 use "analysefil_kommunepar", clear
-
-gen bef_tetthet = befolkning /areal
-local innenmor faar alderkat* paritetkat*
-local kommunepar faar alderkat* paritetkat* medukat*
-local innenmor_befolkning faar alderkat* paritetkat* bef_tetthet befolkning
-local justeringer innenmor kommunepar innenmor_befolkning
-
-
-*local idlist  id_innenmor  id_N100_chi2p100_diffp20 id_N100_chi2p100_diffp90
-
-
-local idlist id_innenmor id_kommunepar_alle id_alle id_kommunepar_N100 id_kommunepar_steg3
-
-
-
 
 // Sett opp IV og levels
 gen IV_vol  = IV_kommunepar_per1000*1000
